@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>POO form validation</title>
+        <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    </head>
+    <body>
+
+        <main>
+
+            <section>
+
+                <div class="title">
+                  <h1>Formulario POO</h1>
+
+                <ul>
+                    <li>Todos campos devem estar preenchidos</li>
+                    <li>Usuario deve conter apenas letras e/ou numeros</li>
+                    <li>Usuario deve conter entre 3 e 12 caracteres</li>
+                    <li>Senha deve conter no minimo 6 caracteres</li>
+                </ul>
+
+                </div>
+
+                <form>
+
+                    <label for="usuario">Usuario</label>
+                    <input class = 'usuario'id="usuario" name="usuario" type="text">
+                    
+
+                    <label for="cpf">CPF</label>
+                    <input class = 'cpf'id="cpf" name="cpf" type="text">
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+
+                    <label for="senha">Senha</label>
+                    <input class = 'senha'id="senha" name="senha" type="password">
+
+                    <label for="repeatSenha">Repetir senha</label>
+                    <input class = 'repeatSenha'id="repeatSenha" name="repeatSenha" type="password">
+
+
+                    <input type="submit" value="Enviar" class = 'submit'>
+                </form>
+
+                
+
+            </section>
+
+        </main>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

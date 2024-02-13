@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+  border-radius: 0.6vh;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 1vh;
+  position: absolute;
+  width: 1vh;
+  background-color: var(--corFundo);
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Montserrat';
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.05vh;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+
+/* root */
+:root {
+  --corTexto: #111;
+  --corFundo: #fff;
+  --colorido: #14182b;
+}
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--colorido);
+}
+
+/* formulario */
+section {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 80%;
+  max-height: 100%;
+  width: 40%;
+  padding: 3%;
+  background-color: var(--corFundo);
+  border-radius: 5px;
+}
+
+
+
+section h1 {
+  width: 100%;
+  font-weight: 800;
+}
+
+section .title{
+  width: 100%;
+  height: max-content;
+}
+
+section ul li {
+  font-weight: 600;
+}
+
+section form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
+  height: 60%;
+  width: 100%;
+}
+
+
+
+section form label {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section form input {
+  padding: 7px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #333;
+}
+
+section form input:focus {
+  border: 2px solid var(--colorido);
+}
+
+section .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--colorido);
+  color: #fff;
+  border-radius: 3px;
+}
+
+section .submit:hover {
+  background-color: #44518b;
+}
+
+.error-msg{
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(252, 102, 102);
+}
+
+@media screen and (max-width: 1000px) {
+  section{
+    min-height: 40%;
+    width: 80%;
+    justify-content: center;
+  }
+
+  section form{
+    
+    justify-content: flex-start;
+    gap: 0.5vh;
+  }
+}
